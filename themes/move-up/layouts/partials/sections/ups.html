@@ -10,9 +10,9 @@
     <div class="row">
       {{ range .content.points }}
         <div class="col-12 col-xl-4">
-          <div class="card  border-0 border-radius-34 ">
+          <div class="text-center  border-0 border-radius-34 ">
             {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
-            <div class="card-body text-center">
+            <div class="card-body ">
               {{ with .title }}<h4 class="card-title text-center text-primary ">{{ . }}</h4>{{ end }}
               {{ with .description }}<p class="card-text text-black-61 ">{{ . }}</p>{{ end }}
             </div>
