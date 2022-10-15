@@ -2,14 +2,14 @@ baseURL: "https://thanhsmind.github.io/upbussiness/"
 theme: "move-up"
 languageCode: "en-us"
 
-title: "Up Business"
+title: "Move Up"
 
 # googleAnalytics: ""
 
 summaryLength: 20
 
 params:
-  title: "Up Business"
+  title: "Move Up"
   description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
   images: 
     - "images/hero-image.png"
@@ -20,6 +20,7 @@ params:
     themeColor: "#FFFFFF"
     backgroundColor: "#FFFFFF"
     faviconColor: "#000000"
+
 
   social:
     dribbble: "#"
