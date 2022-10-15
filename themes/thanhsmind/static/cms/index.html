@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/cms/";
+          });
+        }
+      });
+    }
+  </script>
+  <script>
+    CMS.registerEditorComponent({
+      id: "embed-youtube",
+      label: "Insert Youtube",
+      fields: [{
+        name: "embed_youtube",
+        label: "Youtube link",
+        widget: "string"
+      }],
+      pattern: /^{{<embed_youtube link="(.*)" >}}/,
+      fromBlock: function (match) {
+        return {
+          youtube_link: match[1]
+        };
+      },
+      toBlock: ({ embed_youtube }) =>
+        `{{<embed-youtube link="${embed_youtube}" >}}`,
+
+      toPreview: ({ embed_youtube }) => {
+        return `{{<embed-youtube link="${embed_youtube}" >}}`
+      }
+    })
+  </script>
+  <script>
+    CMS.registerEditorComponent({
+      id: "image_link",
+      label: "Image with link",
+      fields: [{
+        name: "url",
+        label: "Link",
+        widget: "string",
+        required: true
+      },
+      {
+        name: "src",
+        label: "Image",
+        widget: "image",
+        required: true
+      },
+      {
+        name: "caption",
+        label: "Caption",
+        widget: "string",
+        required: true
+      }
+      ],
+      ppattern: /^{{<image_link url="(.*)" src="(.*) caption="(.*)">$}}/,
+      fromBlock: function (match) {
+        console.log(match);
+        return {
+          url: match[1],
+          src: match[2],
+          caption: match[3]
+        };
+      },
+      toBlock: (data) =>
+        `{{<image_link url="${data.url}" src="${data.src}" caption="${data.caption}">}}`,
+
+      toPreview: (data) => {
+        return `{{<image_link url="${data.url}" src="${data.src}" caption="${data.caption}">}}`
+      }
+    })
+  </script>
+
+</body>
+
+</html>

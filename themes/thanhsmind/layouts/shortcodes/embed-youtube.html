@@ -1,0 +1,10 @@
+{{ $link := .Get "link"}}
+{{ $url := urls.Parse $link }}
+{{ $q := $url.Query }}
+{{ $videoId := $q.Get "v" }}
+
+<div class="videos-wrapper mx-auto">
+    <div class="py-4">
+        <iframe class="mx-auto" width="560" height="500" src="https://www.youtube.com/embed/{{$videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>

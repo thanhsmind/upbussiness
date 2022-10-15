@@ -1,0 +1,48 @@
+enabled: true
+id: "services"
+
+content:
+  title: "What we offer"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  cards:
+    - image: "images/services-web-development.png"
+      title: "Creative & Culture Initiatives"
+      text: "We help you craft the stories and plan out the internal activities throughout the year that simply leave good impressions on employees no matter when they are still in the stage of recruitment process, onboarding, growing, recognition or being ready to make a move."
+      button:
+        label: "SEE HOW"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Engaging Campaign Activation"
+      text: "We work on detailed concepts that are adaptive with the company’s culture to create and deliver fun and engaging campaigns end-to-end."
+      button:
+        label: "SEE HOW"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Strategic External Communications"
+      text: "What is most specific about your company will be outlined in an insightful media schedule and powerfully enhance your company’s employer branding on appropriate platforms."
+      button:
+        label: "SEE HOW"
+        url: "#"
+
+    - image: "images/services-web-development.png"
+      title: "Brand Persona Modeling"
+      text: "We listen to your company’s stories to understand and analyze with care to help you draft an appealing company’s Brand Persona that can be served recruitment marketing purposes."
+      button:
+        label: "SEE HOW"
+        url: "#"
+    
+    - image: "images/services-web-development.png"
+      title: "Communications Framework Optimization"
+      text: "Getting confused with where and how to put up different content on your company’s cross channels? Get our help and create a solid clear structure that can guide you better in how to deliver your stories at best."
+      button:
+        label: "SEE HOW"
+        url: "#"        
+
+    - image: "images/services-web-development.png"
+      title: "EX Workshop (with compliments)"
+      text: "We are happy to share fundamental knowledge and concepts about employee experience (EX) with showcases in different workshops. You will get to meet the experts and learn from the best."
+      button:
+        label: "SEE HOW"
+        url: "#"        

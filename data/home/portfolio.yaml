@@ -1,0 +1,22 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - image: "images/portfolio-ecommerce.png"
+    pretitle: "Our Story"
+    title: "FIRST, MAKE IT RIGHT"
+    text: "We’ve once been the work professionals and sometimes felt like getting lost at work. We then realized it is not easy to get a work-life balance without massive efforts and everything has to be done properly right from the start. We found that our so-called employee experience is required much more than just what we get paid every month. theTalentPro is therefore born to write a different story about how much fun and engaging an office life can be.
+Our team is formed from a group of marketing and technical geeks who are passionate in making a workplace positive and engaging as always through innovative approaches, both traditional and digital tactics . 
+
+
+“When you trust in what we can do, your heart is put in the right place”
+"
+
+    buttons: 
+      - label: ""
+        url: "#"
+
+      - label: ""
+        url: "#"
+
+  

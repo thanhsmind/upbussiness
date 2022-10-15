@@ -1,0 +1,14 @@
+enabled: true
+id: "ups"
+
+content:
+  points:
+    - image: "images/usp/Solutions-HR_IconTop-216x216.png"
+      title: "Create a workplace culture like no other"
+      description: "Everyone should enjoy work. Create a work culture your team loves. Give them what they want and create loyalty now – and for many years to come."
+    - image: "images/usp/Governance_Central-216x216.png"
+      title: "Keep your team strategically aligned"
+      description: "Different teams? Different locations? Different goals? Not a worry. Get – and stay – on the same page company-wide with our suite of strategic alignment features."
+    - image: "images/usp/Recruit_ManageCand-216x216.png"
+      title: "Build and maintain trust company-wide"
+      description: "Employee monitoring? It’s not needed. Your team are your cheerleaders. Your champions. Instill the trust they deserve so you can focus on output over hours."
