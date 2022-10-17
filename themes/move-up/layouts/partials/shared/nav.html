@@ -1,0 +1,30 @@
+<!-- Navigation -->
+{{ if or (eq .Params.navstyle "invert") (eq .Params.headerstyle "text")  }}
+<nav class="navbar   navbar-expand-xl  navbar-custom navbar-fixed-top invert">
+{{ else }}
+<nav class="navbar   navbar-expand-xl  navbar-custom navbar-fixed-top">
+{{ end }}
+    <div class="container">
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="nav navbar-nav ms-auto mb-2 mb-xl-0">
+              {{ range .Site.Menus.main }}
+                <li class="nav-item text-center">
+                  <a class="nav-link  px-2" href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
+            </ul>
+            
+        </div>
+
+       
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

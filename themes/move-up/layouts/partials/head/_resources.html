@@ -9,3 +9,22 @@
 
 <style type="text/css" media="all">{{ $sharedSCSS.Content | safeCSS }}</style>
 <script>{{- $sharedJS.Content | safeJS -}}</script>
+
+
+ <!-- Custom Fonts -->
+ <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+ <!--  Custom CSS  -->
+ {{ range .Site.Params.custom_css -}}
+ <link rel="stylesheet" href="{{ . | absURL }}">
+ {{- end }}
+
+ <!-- jQuery -->
+ <script src="{{ "js/jquery.min.js" | relURL }}"></script>
+
+ 
+ <!-- Hux Theme JavaScript -->
+ <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
+
+ <!-- lazy load image JavaScript -->
+ <script src="{{ "js/lazysizes.min.js" | relURL }}"></script>

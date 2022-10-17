@@ -2,7 +2,7 @@
 title: "3 tính năng hữu ích của LinkedIn Recruiter trong phỏng vấn "
 draft: false
 date: 2022-04-18
-image: /images/uploads/adobestock_324448030-scaled.jpeg
+image: https://images.unsplash.com/photo-1473800447596-01729482b8eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 categories:
   - Linkedin Talent Solutions
 tags:

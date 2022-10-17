@@ -84,3 +84,11 @@ menus:
 taxonomies:
   series: "series"
   tags: "tags"
+
+
+markup:
+  markup.tableOfContents:
+    endLevel: 2
+    startLevel:  1
+  markup.highlight:
+    style: "dracula"
